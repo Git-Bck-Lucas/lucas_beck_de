@@ -4,7 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /* Palette folded in from W1 prototype winner (Variant F): warm off-white paper,
-   near-black warm ink, single burnt-orange accent. Light + dark. */
+   near-black warm ink. Primary accent = warm red (Lucas's favourite), with a
+   burnt-orange secondary accent. Light + dark. */
 :root {
   --radius: 0.625rem;
   --background: #faf9f7;
@@ -13,18 +14,19 @@
   --card-foreground: #17150f;
   --popover: #ffffff;
   --popover-foreground: #17150f;
-  --primary: #c2410c;
+  --primary: #d12d1c;
   --primary-foreground: #ffffff;
+  --accent-orange: #c2410c;
   --secondary: #f1efe9;
   --secondary-foreground: #17150f;
   --muted: #f1efe9;
   --muted-foreground: #6b665c;
-  --accent: #f4ede6;
-  --accent-foreground: #c2410c;
+  --accent: #f6e9e6;
+  --accent-foreground: #d12d1c;
   --destructive: #dc2626;
   --border: #e6e3dc;
   --input: #e6e3dc;
-  --ring: #c2410c;
+  --ring: #d12d1c;
 }
 
 .dark {
@@ -34,8 +36,9 @@
   --card-foreground: #f4f2ee;
   --popover: #1b1a17;
   --popover-foreground: #f4f2ee;
-  --primary: #ea6a2e;
+  --primary: #f0503a;
   --primary-foreground: #17150f;
+  --accent-orange: #ea6a2e;
   --secondary: #26241f;
   --secondary-foreground: #f4f2ee;
   --muted: #26241f;
@@ -61,6 +64,7 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-accent-orange: var(--accent-orange);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);

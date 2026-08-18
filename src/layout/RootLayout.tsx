@@ -45,7 +45,7 @@ export function RootLayout() {
               setMenuOpen(false)
               goTop()
             }}
-            className="flex items-center gap-2 text-sm font-bold tracking-tight"
+            className="flex items-center gap-2 whitespace-nowrap text-sm font-bold tracking-tight"
           >
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary" />
             Lucas Beck
@@ -53,7 +53,7 @@ export function RootLayout() {
 
           <div className="flex items-center gap-1">
             {/* desktop nav */}
-            <nav className="hidden items-center gap-1 sm:flex">
+            <nav className="hidden items-center gap-1 lg:flex">
               {sections.map((s) => (
                 <button
                   key={s.id}
@@ -71,17 +71,17 @@ export function RootLayout() {
               </NavLink>
             </nav>
 
-            <div className="flex items-center gap-1 sm:ml-2 sm:border-l sm:border-border sm:pl-2">
+            <div className="flex items-center gap-1 lg:ml-2 lg:border-l lg:border-border lg:pl-2">
               <LanguageToggle />
               <ThemeToggle />
             </div>
 
-            {/* mobile burger */}
+            {/* mobile / tablet burger */}
             <button
               onClick={() => setMenuOpen((v) => !v)}
               aria-label="Menü"
               aria-expanded={menuOpen}
-              className="grid h-9 w-9 place-items-center rounded-md text-foreground hover:bg-accent sm:hidden"
+              className="grid h-9 w-9 place-items-center rounded-md text-foreground hover:bg-accent lg:hidden"
             >
               {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -91,7 +91,7 @@ export function RootLayout() {
 
       {/* mobile menu overlay */}
       {menuOpen && (
-        <div className="fixed inset-x-0 bottom-0 top-16 z-40 bg-background sm:hidden">
+        <div className="fixed inset-x-0 bottom-0 top-16 z-40 bg-background lg:hidden">
           <nav className="mx-auto flex max-w-5xl flex-col px-6 py-6">
             {sections.map((s, i) => (
               <button
@@ -102,7 +102,7 @@ export function RootLayout() {
                   active === s.id && "text-foreground"
                 )}
               >
-                <span className="font-mono text-xs text-primary">
+                <span className="font-mono text-xs text-accent-orange">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 {t(s.key)}
@@ -117,7 +117,7 @@ export function RootLayout() {
                 )
               }
             >
-              <span className="font-mono text-xs text-primary">07</span>
+              <span className="font-mono text-xs text-accent-orange">07</span>
               {t("nav.privat")}
             </NavLink>
           </nav>
