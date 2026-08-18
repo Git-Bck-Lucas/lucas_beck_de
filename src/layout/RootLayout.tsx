@@ -1,5 +1,7 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { NavLink, Outlet, useLocation } from "react-router-dom"
 import { useTranslation } from "react-i18next"
+import { Menu, X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { sections } from "@/sections/sections"
@@ -9,48 +11,118 @@ import { LanguageToggle } from "@/components/language-toggle"
 
 export function RootLayout() {
   const { t } = useTranslation()
+  const location = useLocation()
   const { active, goTo, goTop } = useSectionNav()
+  const [menuOpen, setMenuOpen] = useState(false)
 
-  const navLinkClass =
-    "rounded-md px-2 py-2 font-mono text-[11px] uppercase tracking-[0.08em] text-muted-foreground transition-colors hover:text-foreground sm:px-3 sm:text-[12px] sm:tracking-[0.12em]"
+  const desktopLinkClass =
+    "rounded-md px-3 py-2 font-mono text-[12px] uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
+
+  // Close the mobile menu on navigation, and lock body scroll / support Escape while open.
+  useEffect(() => setMenuOpen(false), [location.pathname])
+  useEffect(() => {
+    if (!menuOpen) return
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setMenuOpen(false)
+    document.body.style.overflow = "hidden"
+    window.addEventListener("keydown", onKey)
+    return () => {
+      document.body.style.overflow = ""
+      window.removeEventListener("keydown", onKey)
+    }
+  }, [menuOpen])
+
+  const handleSection = (id: string) => {
+    setMenuOpen(false)
+    goTo(id)
+  }
 
   return (
     <div className="flex min-h-dvh flex-col">
-      <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur">
         <div className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between px-6">
           <button
-            onClick={goTop}
+            onClick={() => {
+              setMenuOpen(false)
+              goTop()
+            }}
             className="flex items-center gap-2 text-sm font-bold tracking-tight"
           >
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary" />
             Lucas Beck
           </button>
 
-          <nav className="flex items-center gap-0.5 sm:gap-1">
-            {/* TODO: proper mobile menu; links stay compact for now. */}
-            {sections.map((s) => (
+          <div className="flex items-center gap-1">
+            {/* desktop nav */}
+            <nav className="hidden items-center gap-1 sm:flex">
+              {sections.map((s) => (
+                <button
+                  key={s.id}
+                  onClick={() => goTo(s.id)}
+                  className={cn(desktopLinkClass, active === s.id && "text-foreground")}
+                >
+                  {t(s.key)}
+                </button>
+              ))}
+              <NavLink
+                to="/privat"
+                className={({ isActive }) => cn(desktopLinkClass, isActive && "text-foreground")}
+              >
+                {t("nav.privat")}
+              </NavLink>
+            </nav>
+
+            <div className="flex items-center gap-1 sm:ml-2 sm:border-l sm:border-border sm:pl-2">
+              <LanguageToggle />
+              <ThemeToggle />
+            </div>
+
+            {/* mobile burger */}
+            <button
+              onClick={() => setMenuOpen((v) => !v)}
+              aria-label="Menü"
+              aria-expanded={menuOpen}
+              className="grid h-9 w-9 place-items-center rounded-md text-foreground hover:bg-accent sm:hidden"
+            >
+              {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* mobile menu overlay */}
+      {menuOpen && (
+        <div className="fixed inset-x-0 bottom-0 top-16 z-40 bg-background sm:hidden">
+          <nav className="mx-auto flex max-w-5xl flex-col px-6 py-6">
+            {sections.map((s, i) => (
               <button
                 key={s.id}
-                onClick={() => goTo(s.id)}
-                className={cn(navLinkClass, active === s.id && "text-foreground")}
+                onClick={() => handleSection(s.id)}
+                className={cn(
+                  "flex items-center gap-3 border-b border-border py-4 text-left text-lg font-medium text-muted-foreground transition-colors hover:text-foreground",
+                  active === s.id && "text-foreground"
+                )}
               >
+                <span className="font-mono text-xs text-primary">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
                 {t(s.key)}
               </button>
             ))}
             <NavLink
               to="/privat"
-              className={({ isActive }) => cn(navLinkClass, isActive && "text-foreground")}
+              className={({ isActive }) =>
+                cn(
+                  "flex items-center gap-3 border-b border-border py-4 text-lg font-medium text-muted-foreground transition-colors hover:text-foreground",
+                  isActive && "text-foreground"
+                )
+              }
             >
+              <span className="font-mono text-xs text-primary">07</span>
               {t("nav.privat")}
             </NavLink>
-
-            <div className="ml-1 flex items-center gap-1 border-l border-border pl-1 sm:ml-2 sm:pl-2">
-              <LanguageToggle />
-              <ThemeToggle />
-            </div>
           </nav>
         </div>
-      </header>
+      )}
 
       <main className="mx-auto w-full max-w-5xl flex-1 px-6">
         <Outlet />
