@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "placeholder": "Scaffold is up. Content to follow."
+  },
+  "a11y": {
+    "toggleTheme": "Toggle theme",
+    "toggleLanguage": "Toggle language"
+  }
+}

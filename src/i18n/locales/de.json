@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Start",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "home": {
+    "placeholder": "Gerüst steht. Inhalte folgen."
+  },
+  "a11y": {
+    "toggleTheme": "Design wechseln",
+    "toggleLanguage": "Sprache wechseln"
+  }
+}
