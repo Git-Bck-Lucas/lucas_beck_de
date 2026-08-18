@@ -1,20 +1,57 @@
 {
   "nav": {
-    "home": "Start",
     "about": "Über mich",
+    "experience": "Werdegang",
+    "education": "Ausbildung",
+    "skills": "Skills",
     "projects": "Projekte",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "privat": "Privat"
   },
   "footer": {
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "rights": "Alle Rechte vorbehalten."
   },
-  "home": {
-    "placeholder": "Gerüst steht. Inhalte folgen."
-  },
   "a11y": {
     "toggleTheme": "Design wechseln",
     "toggleLanguage": "Sprache wechseln"
+  },
+  "common": {
+    "placeholder": "— Inhalt folgt —"
+  },
+  "hero": {
+    "taglinePlaceholder": "— Headline folgt —"
+  },
+  "about": {
+    "education": "Ausbildung",
+    "skills": "Fähigkeiten",
+    "languages": "Sprachen"
+  },
+  "projects": {
+    "flagship": "Flagship-Projekt",
+    "moreSoon": "Weitere Projekte folgen."
+  },
+  "privat": {
+    "title": "Privat",
+    "heading": "Abseits der Arbeit",
+    "blog": { "title": "Blog" },
+    "djing": { "title": "DJing" }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "accordingTo": "Angaben gemäß § 5 DDG"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "controllerTitle": "Verantwortlicher",
+    "controllerText": "Verantwortlich für die Datenverarbeitung auf dieser Website ist die im Impressum genannte Person.",
+    "dataTitle": "Welche Daten verarbeitet werden",
+    "dataText": "Diese Website ist statisch und setzt keine Cookies, kein Tracking und keine Analyse-Tools ein. Beim Aufruf werden durch den Hosting-Anbieter technisch notwendige Server-Logs (u. a. IP-Adresse, Zeitpunkt, aufgerufene Ressource) verarbeitet, die dem sicheren Betrieb dienen und nicht mit anderen Daten zusammengeführt werden.",
+    "contactTitle": "Kontaktaufnahme",
+    "contactText": "Wenn du mich per E-Mail kontaktierst, werden deine Angaben ausschließlich zur Bearbeitung der Anfrage verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.",
+    "rightsTitle": "Deine Rechte",
+    "rightsText": "Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner personenbezogenen Daten sowie ein Beschwerderecht bei einer Aufsichtsbehörde.",
+    "draftNote": "Entwurf – wird vor dem Livegang final geprüft."
   }
 }

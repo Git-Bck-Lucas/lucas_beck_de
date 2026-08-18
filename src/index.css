@@ -3,47 +3,49 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Palette folded in from W1 prototype winner (Variant F): warm off-white paper,
+   near-black warm ink, single burnt-orange accent. Light + dark. */
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --background: #faf9f7;
+  --foreground: #17150f;
+  --card: #ffffff;
+  --card-foreground: #17150f;
+  --popover: #ffffff;
+  --popover-foreground: #17150f;
+  --primary: #c2410c;
+  --primary-foreground: #ffffff;
+  --secondary: #f1efe9;
+  --secondary-foreground: #17150f;
+  --muted: #f1efe9;
+  --muted-foreground: #6b665c;
+  --accent: #f4ede6;
+  --accent-foreground: #c2410c;
+  --destructive: #dc2626;
+  --border: #e6e3dc;
+  --input: #e6e3dc;
+  --ring: #c2410c;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --background: #131210;
+  --foreground: #f4f2ee;
+  --card: #1b1a17;
+  --card-foreground: #f4f2ee;
+  --popover: #1b1a17;
+  --popover-foreground: #f4f2ee;
+  --primary: #ea6a2e;
+  --primary-foreground: #17150f;
+  --secondary: #26241f;
+  --secondary-foreground: #f4f2ee;
+  --muted: #26241f;
+  --muted-foreground: #a7a294;
+  --accent: #2c2822;
+  --accent-foreground: #ea6a2e;
+  --destructive: #f87171;
+  --border: #2e2c27;
+  --input: #33302a;
+  --ring: #ea6a2e;
 }
 
 @theme inline {

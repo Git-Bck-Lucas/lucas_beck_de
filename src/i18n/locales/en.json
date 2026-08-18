@@ -1,20 +1,57 @@
 {
   "nav": {
-    "home": "Home",
     "about": "About",
+    "experience": "Career",
+    "education": "Education",
+    "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privat": "Personal"
   },
   "footer": {
     "imprint": "Imprint",
     "privacy": "Privacy",
     "rights": "All rights reserved."
   },
-  "home": {
-    "placeholder": "Scaffold is up. Content to follow."
-  },
   "a11y": {
     "toggleTheme": "Toggle theme",
     "toggleLanguage": "Toggle language"
+  },
+  "common": {
+    "placeholder": "— content coming —"
+  },
+  "hero": {
+    "taglinePlaceholder": "— tagline coming —"
+  },
+  "about": {
+    "education": "Education",
+    "skills": "Skills",
+    "languages": "Languages"
+  },
+  "projects": {
+    "flagship": "Flagship project",
+    "moreSoon": "More projects to follow."
+  },
+  "privat": {
+    "title": "Personal",
+    "heading": "Off the clock",
+    "blog": { "title": "Blog" },
+    "djing": { "title": "DJing" }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "accordingTo": "Information pursuant to § 5 DDG"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "controllerTitle": "Controller",
+    "controllerText": "The person named in the imprint is responsible for data processing on this website.",
+    "dataTitle": "What data is processed",
+    "dataText": "This website is static and uses no cookies, no tracking and no analytics tools. When the site is accessed, the hosting provider processes technically necessary server logs (including IP address, time, requested resource) that serve secure operation and are not merged with other data.",
+    "contactTitle": "Getting in touch",
+    "contactText": "If you contact me by email, your details are processed solely to handle your request. The legal basis is Art. 6(1)(f) GDPR.",
+    "rightsTitle": "Your rights",
+    "rightsText": "You have the right to information, correction, deletion and restriction of the processing of your personal data, as well as the right to lodge a complaint with a supervisory authority.",
+    "draftNote": "Draft — to be finalized before going live."
   }
 }

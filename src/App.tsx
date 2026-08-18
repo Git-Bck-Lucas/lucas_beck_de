@@ -1,20 +1,21 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import { RootLayout } from "@/layout/RootLayout"
-import { PlaceholderPage } from "@/routes/PlaceholderPage"
+import { Home } from "@/routes/Home"
+import { Privat } from "@/routes/Privat"
+import { Imprint } from "@/routes/Imprint"
+import { Privacy } from "@/routes/Privacy"
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<RootLayout />}>
-          <Route index element={<PlaceholderPage titleKey="nav.home" />} />
-          <Route path="about" element={<PlaceholderPage titleKey="nav.about" />} />
-          <Route path="projects" element={<PlaceholderPage titleKey="nav.projects" />} />
-          <Route path="contact" element={<PlaceholderPage titleKey="nav.contact" />} />
-          <Route path="impressum" element={<PlaceholderPage titleKey="footer.imprint" />} />
-          <Route path="datenschutz" element={<PlaceholderPage titleKey="footer.privacy" />} />
-          <Route path="*" element={<PlaceholderPage titleKey="nav.home" />} />
+          <Route index element={<Home />} />
+          <Route path="privat" element={<Privat />} />
+          <Route path="impressum" element={<Imprint />} />
+          <Route path="datenschutz" element={<Privacy />} />
+          <Route path="*" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
