@@ -11,7 +11,7 @@ export function Hero() {
 
   return (
     <section id="top" className="scroll-mt-24 py-16 sm:py-28">
-      <p className="font-mono text-[12px] uppercase tracking-[0.25em] text-primary">
+      <p className="font-mono text-[12px] uppercase tracking-[0.25em] text-accent-orange">
         {pick(site.role, lang)} · {pick(site.location, lang)}
       </p>
       <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-6xl">
