@@ -4,6 +4,8 @@ import { useLocation } from "react-router-dom"
 import { Hero } from "@/sections/Hero"
 import { About } from "@/sections/About"
 import { Experience } from "@/sections/Experience"
+import { Education } from "@/sections/Education"
+import { Skills } from "@/sections/Skills"
 import { Projects } from "@/sections/Projects"
 import { Contact } from "@/sections/Contact"
 
@@ -25,6 +27,8 @@ export function Home() {
       <Hero />
       <About />
       <Experience />
+      <Education />
+      <Skills />
       <Projects />
       <Contact />
     </>

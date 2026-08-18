@@ -11,7 +11,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="scroll-mt-24 border-t border-border py-16 sm:py-24">
-      <SectionHeading index="03">{t("nav.projects")}</SectionHeading>
+      <SectionHeading index="05">{t("nav.projects")}</SectionHeading>
 
       <div className="space-y-6">
         {projects.map((p) => (

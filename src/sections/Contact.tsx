@@ -8,7 +8,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="scroll-mt-24 border-t border-border py-16 sm:py-24">
-      <SectionHeading index="04">{t("nav.contact")}</SectionHeading>
+      <SectionHeading index="06">{t("nav.contact")}</SectionHeading>
 
       <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
         <a

@@ -14,7 +14,7 @@ export function Hero() {
       <p className="font-mono text-[12px] uppercase tracking-[0.25em] text-primary">
         {pick(site.role, lang)} · {pick(site.location, lang)}
       </p>
-      <h1 className="mt-6 text-5xl font-bold tracking-tight sm:text-7xl">
+      <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-6xl">
         {site.name}
         <span className="text-primary">.</span>
       </h1>

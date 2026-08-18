@@ -2,6 +2,8 @@
 export const sections = [
   { id: "about", key: "nav.about" },
   { id: "experience", key: "nav.experience" },
+  { id: "education", key: "nav.education" },
+  { id: "skills", key: "nav.skills" },
   { id: "projects", key: "nav.projects" },
   { id: "contact", key: "nav.contact" },
 ] as const
