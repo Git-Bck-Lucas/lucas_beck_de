@@ -6,16 +6,19 @@ import type { ReactNode } from "react"
 import { useSearchParams } from "react-router-dom"
 
 import { PrototypeSwitcher } from "./PrototypeSwitcher"
+import { VariantE } from "./variants/VariantE"
+import { VariantF } from "./variants/VariantF"
 import { VariantA } from "./variants/VariantA"
 import { VariantB } from "./variants/VariantB"
-import { VariantC } from "./variants/VariantC"
 import { VariantD } from "./variants/VariantD"
 
+// E/F are the synthesis (A+B+D direction). A/B/D kept only as reference. C dropped.
 const variants: Record<string, { label: string; Component: () => ReactNode }> = {
-  A: { label: "Editorial Minimal", Component: VariantA },
-  B: { label: "Split Sidebar", Component: VariantB },
-  C: { label: "Bold Centered", Component: VariantC },
-  D: { label: "Mono Grid", Component: VariantD },
+  E: { label: "Studio Rail", Component: VariantE },
+  F: { label: "Editorial Index", Component: VariantF },
+  A: { label: "Editorial Minimal (Ref)", Component: VariantA },
+  B: { label: "Split Sidebar (Ref)", Component: VariantB },
+  D: { label: "Mono Grid (Ref)", Component: VariantD },
 }
 
 const keys = Object.keys(variants)
@@ -25,8 +28,8 @@ const labels = Object.fromEntries(
 
 export default function PrototypePage() {
   const [searchParams, setSearchParams] = useSearchParams()
-  const raw = searchParams.get("variant")?.toUpperCase() ?? "A"
-  const current = keys.includes(raw) ? raw : "A"
+  const raw = searchParams.get("variant")?.toUpperCase() ?? "E"
+  const current = keys.includes(raw) ? raw : "E"
 
   const setVariant = (key: string) => {
     setSearchParams({ variant: key }, { replace: true })

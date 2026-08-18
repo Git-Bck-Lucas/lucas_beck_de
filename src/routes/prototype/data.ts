@@ -3,10 +3,11 @@
 
 export const content = {
   name: "Lucas Beck",
-  role: "Data & AI Engineer",
+  role: "Platzhalter-Rolle",
   location: "Deutschland",
+  // Platzhalter — echte Texte kommen später, hier nur zum Beurteilen des Layouts.
   intro:
-    "Ich baue Data- und AI-Systeme, die in Produktion laufen: von RAG-Pipelines über saubere Backends bis zum Deployment.",
+    "Platzhalter-Intro. Hier stehen später ein, zwei Sätze über meine Arbeit — bewusst noch generisch, damit das Layout im Vordergrund steht.",
   flagship: {
     title: "Audio DNA",
     tagline:
