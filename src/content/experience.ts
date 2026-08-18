@@ -13,7 +13,7 @@ export const experience: Experience[] = [
         "Building expertise in developing agentic AI systems with the Anthropic SDK, focused on practical automation solutions for non-profits and small and medium-sized businesses.",
       ],
     },
-    tags: ["Anthropic SDK", "Python", "Agentic AI", "Automation"],
+    tags: [],
   },
   {
     company: "Lot Internet GmbH",

@@ -1,9 +1,10 @@
 {
   "nav": {
-    "home": "Start",
     "about": "Über mich",
+    "experience": "Werdegang",
     "projects": "Projekte",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "privat": "Privat"
   },
   "footer": {
     "imprint": "Impressum",
@@ -14,38 +15,30 @@
     "toggleTheme": "Design wechseln",
     "toggleLanguage": "Sprache wechseln"
   },
-  "home": {
-    "selectedProjects": "Ausgewählte Projekte",
-    "allProjects": "Alle Projekte",
-    "aboutCta": "Mehr über mich",
-    "viewProject": "Ansehen"
+  "common": {
+    "placeholder": "— Inhalt folgt —"
+  },
+  "hero": {
+    "taglinePlaceholder": "— Headline folgt —"
   },
   "about": {
-    "title": "Über mich",
-    "experience": "Berufserfahrung",
     "education": "Ausbildung",
     "skills": "Fähigkeiten",
     "languages": "Sprachen"
   },
   "projects": {
-    "title": "Projekte",
     "flagship": "Flagship-Projekt",
-    "moreSoon": "Weitere Projekte folgen.",
-    "stack": "Stack"
+    "moreSoon": "Weitere Projekte folgen."
   },
-  "contact": {
-    "title": "Kontakt",
-    "intro": "Am schnellsten erreichst du mich per E-Mail. Ich freue mich über Nachrichten zu Projekten, Zusammenarbeit oder einfach zum Austausch.",
-    "emailMe": "E-Mail schreiben",
-    "elsewhere": "Woanders"
+  "privat": {
+    "title": "Privat",
+    "heading": "Abseits der Arbeit",
+    "blog": { "title": "Blog" },
+    "djing": { "title": "DJing" }
   },
   "imprint": {
     "title": "Impressum",
-    "accordingTo": "Angaben gemäß § 5 DDG",
-    "contact": "Kontakt",
-    "responsible": "Verantwortlich für den Inhalt",
-    "disclaimerTitle": "Haftung für Inhalte",
-    "disclaimer": "Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Für externe Links, auf deren Inhalte ich keinen Einfluss habe, wird keine Haftung übernommen; für die Inhalte verlinkter Seiten ist stets deren jeweiliger Betreiber verantwortlich."
+    "accordingTo": "Angaben gemäß § 5 DDG"
   },
   "privacy": {
     "title": "Datenschutzerklärung",
@@ -54,7 +47,7 @@
     "dataTitle": "Welche Daten verarbeitet werden",
     "dataText": "Diese Website ist statisch und setzt keine Cookies, kein Tracking und keine Analyse-Tools ein. Beim Aufruf werden durch den Hosting-Anbieter technisch notwendige Server-Logs (u. a. IP-Adresse, Zeitpunkt, aufgerufene Ressource) verarbeitet, die dem sicheren Betrieb dienen und nicht mit anderen Daten zusammengeführt werden.",
     "contactTitle": "Kontaktaufnahme",
-    "contactText": "Wenn du mich per E-Mail kontaktierst, werden deine Angaben ausschließlich zur Bearbeitung der Anfrage verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung).",
+    "contactText": "Wenn du mich per E-Mail kontaktierst, werden deine Angaben ausschließlich zur Bearbeitung der Anfrage verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.",
     "rightsTitle": "Deine Rechte",
     "rightsText": "Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner personenbezogenen Daten sowie ein Beschwerderecht bei einer Aufsichtsbehörde.",
     "draftNote": "Entwurf – wird vor dem Livegang final geprüft."

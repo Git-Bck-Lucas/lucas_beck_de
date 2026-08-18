@@ -1,9 +1,10 @@
 {
   "nav": {
-    "home": "Home",
     "about": "About",
+    "experience": "Career",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privat": "Personal"
   },
   "footer": {
     "imprint": "Imprint",
@@ -14,38 +15,30 @@
     "toggleTheme": "Toggle theme",
     "toggleLanguage": "Toggle language"
   },
-  "home": {
-    "selectedProjects": "Selected projects",
-    "allProjects": "All projects",
-    "aboutCta": "More about me",
-    "viewProject": "View"
+  "common": {
+    "placeholder": "— content coming —"
+  },
+  "hero": {
+    "taglinePlaceholder": "— tagline coming —"
   },
   "about": {
-    "title": "About me",
-    "experience": "Experience",
     "education": "Education",
     "skills": "Skills",
     "languages": "Languages"
   },
   "projects": {
-    "title": "Projects",
     "flagship": "Flagship project",
-    "moreSoon": "More projects to follow.",
-    "stack": "Stack"
+    "moreSoon": "More projects to follow."
   },
-  "contact": {
-    "title": "Contact",
-    "intro": "The fastest way to reach me is by email. I'm happy to hear about projects, collaboration, or just to connect.",
-    "emailMe": "Send an email",
-    "elsewhere": "Elsewhere"
+  "privat": {
+    "title": "Personal",
+    "heading": "Off the clock",
+    "blog": { "title": "Blog" },
+    "djing": { "title": "DJing" }
   },
   "imprint": {
     "title": "Imprint",
-    "accordingTo": "Information pursuant to § 5 DDG",
-    "contact": "Contact",
-    "responsible": "Responsible for the content",
-    "disclaimerTitle": "Liability for content",
-    "disclaimer": "The contents of these pages were created with the greatest care. However, no guarantee can be given for the accuracy, completeness or timeliness of the content. I accept no liability for external links whose content I do not control; the respective operator is always responsible for the content of linked pages."
+    "accordingTo": "Information pursuant to § 5 DDG"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -54,7 +47,7 @@
     "dataTitle": "What data is processed",
     "dataText": "This website is static and uses no cookies, no tracking and no analytics tools. When the site is accessed, the hosting provider processes technically necessary server logs (including IP address, time, requested resource) that serve secure operation and are not merged with other data.",
     "contactTitle": "Getting in touch",
-    "contactText": "If you contact me by email, your details are processed solely to handle your request. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in responding).",
+    "contactText": "If you contact me by email, your details are processed solely to handle your request. The legal basis is Art. 6(1)(f) GDPR.",
     "rightsTitle": "Your rights",
     "rightsText": "You have the right to information, correction, deletion and restriction of the processing of your personal data, as well as the right to lodge a complaint with a supervisory authority.",
     "draftNote": "Draft — to be finalized before going live."
